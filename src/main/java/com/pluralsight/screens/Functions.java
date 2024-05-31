@@ -19,7 +19,6 @@ public class Functions
                 
                 Choice:\s""");
 
-
         while (true)
         {
             int orderChoice = Inputs.getInt();
@@ -72,10 +71,11 @@ public class Functions
                 ChipsScreen.chipsScreen(currentOrder);
                 orderScreen(currentOrder);
             break;
+
             case 4:
                 Receipt.checkOut(currentOrder);
                 homeScreen();
-            break;
+                break;
             case 0:
                 Receipt.cancelOrder();
         }
