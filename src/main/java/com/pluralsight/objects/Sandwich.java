@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class Sandwich
 {
+
     protected int size;
     protected String breadType;
     protected boolean isToasted;
@@ -36,6 +37,7 @@ public class Sandwich
 
     private void initSandwich(int size)
     {
+
         switch (size)
         {
             case 4 -> totalPrice += 5.50;

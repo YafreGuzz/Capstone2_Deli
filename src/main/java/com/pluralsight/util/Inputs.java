@@ -9,6 +9,7 @@ public class Inputs {
     }
 
     public static void openScanner() {
+
         scanner = new Scanner(System.in);
     }
 
