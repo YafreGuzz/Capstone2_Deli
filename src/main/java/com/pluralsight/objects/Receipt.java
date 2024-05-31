@@ -10,7 +10,7 @@ public class Receipt
 {
     public static void checkOut(Order currentOrder)
     {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss");
         String timestamp = LocalDateTime.now().format(formatter);
         String filePath = "src/main/resources/receipt_" + timestamp + ".txt";
 
@@ -72,7 +72,7 @@ public class Receipt
 
             output.append("=============================\n\n");
             output.append(String.format("Subtotal:             $%.2f\n", totalPrice));
-            output.append(String.format("Tax (7%%):             $%.2f\n", tax));
+            output.append(String.format("Tax (5%%):             $%.2f\n", tax));
             output.append(String.format("Total   :             $%.2f\n", finalPrice));
 
             bufWriter.write(output.toString());

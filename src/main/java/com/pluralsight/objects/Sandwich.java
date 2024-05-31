@@ -21,7 +21,7 @@ public class Sandwich
     private static final Map<String, Double> sauces = new HashMap<>();
     private static final Map<String, Double> sides = new HashMap<>();
 
-    {
+    static {
         initRegularToppings();
     }
 
@@ -131,27 +131,37 @@ public class Sandwich
         return totalPrice;
     }
 
-    public void setTotalPrice(double totalPrice) {
+    public void setTotalPrice(double totalPrice)
+    {
         this.totalPrice = totalPrice;
     }
 
-    public ArrayList<String> getRToppings() {
+
+    public ArrayList<String> getRToppings()
+    {
         return RToppings;
     }
 
-    public void setRToppings(ArrayList<String> RToppings) {
+
+    public void setRToppings(ArrayList<String> RToppings)
+    {
         this.RToppings = RToppings;
     }
 
-    public ArrayList<String> getPToppings() {
+
+    public ArrayList<String> getPToppings()
+    {
         return PToppings;
     }
 
-    public void setPToppings(ArrayList<String> PToppings) {
+
+    public void setPToppings(ArrayList<String> PToppings)
+    {
         this.PToppings = PToppings;
     }
 
-    public double getPrice(String topping, boolean isExtra) {
+    public double getPrice(String topping, boolean isExtra)
+    {
         if (regularToppings.containsKey(topping))
         {
             return regularToppings.get(topping);
@@ -171,7 +181,8 @@ public class Sandwich
     }
 
     private double getExtraPrice(String topping, String type) {
-        switch (size) {
+        switch (size)
+        {
             case 4:
                 return type.equals("Meat") ? 0.50 : 0.30;
             case 8:
@@ -195,11 +206,13 @@ public class Sandwich
         this.size = size;
     }
 
-    public void setBreadType(String breadType) {
+    public void setBreadType(String breadType)
+    {
         this.breadType = breadType;
     }
 
-    public void setToasted(boolean toasted) {
+    public void setToasted(boolean toasted)
+    {
         isToasted = toasted;
     }
 }

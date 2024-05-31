@@ -8,12 +8,14 @@ public class Inputs {
     private Inputs() {
     }
 
-    public static void openScanner() {
+    public static void openScanner()
+    {
 
         scanner = new Scanner(System.in);
     }
 
-    public static void closeScanner() {
+    public static void closeScanner()
+    {
         if (scanner != null) {
             scanner.close();
             scanner = null;
