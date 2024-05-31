@@ -1,0 +1,49 @@
+            Receipt          
+=============================
+
+
+          Sandwich          
+=============================
+
+Bread Type: White
+Size: 12 inches 
+Regular Toppings:
+cucumbers
+pickles
+mushrooms
+tomatoes
+onions
+mayo
+ketchup
+ranch
+ranch
+ 
+Premium Toppings:
+steak
+ham
+salami
+chicken
+bacon
+swiss
+american
+parmesan
+mozzarella
+ Total Price: $24.10
+
+           Drinks          
+=============================
+
+Large Coca Cola $3.00
+Medium Sprite $2.50
+
+            Chips          
+=============================
+
+Lays $1.50
+Doritos $1.50
+Kettle Brand $1.50
+=============================
+
+Subtotal:             $34.10
+Tax (7%):             $1.71
+Total   :             $35.81

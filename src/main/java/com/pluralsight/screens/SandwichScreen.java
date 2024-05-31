@@ -170,11 +170,11 @@ public class SandwichScreen
                     ┌───────────────────────────────---┐
                     │       Meats     |    Cheeses     │
                     ├─────────────────────-───────────-┤
-                    │     Steak       |   American     │
+                    │     Steak       |    American    │
                     │      Ham        |   Provolone    │
-                    │     Salami      |   Cheddar      │
-                    │   Roast Beef    |   Swiss        │
-                    │    Chicken      |   Parmesan     │
+                    │     Salami      |    Cheddar     │
+                    │   Roast Beef    |     Swiss      │
+                    │    Chicken      |    Parmesan    │
                     │     Bacon       |   Mozzarella   │
                     └───────────────────────────────---┘
 
