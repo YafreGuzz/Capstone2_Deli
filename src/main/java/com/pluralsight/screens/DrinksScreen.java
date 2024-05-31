@@ -12,7 +12,8 @@ public class DrinksScreen
 
     public static void drinksMenu(Order currentOrder) {
         boolean breakOut;
-        do {
+        do
+        {
             System.out.print("""
                     Which type of drink?:
                     [1] Sodas
@@ -22,7 +23,8 @@ public class DrinksScreen
 
             int drinkChoice = Inputs.getInt();
 
-            switch (drinkChoice) {
+            switch (drinkChoice)
+            {
                 case 1:
                     Drinks soda = sodasMenu();
                     currentOrder.addDrink(soda);
@@ -114,7 +116,9 @@ public class DrinksScreen
 
             soda.setSize(size);
             soda.setPrice(price);
-        } else {
+        }
+        else
+        {
             System.out.println("Sorry, that's not a valid choice, try again!");
         }
         return soda;
@@ -135,9 +139,11 @@ public class DrinksScreen
 
         int userInput = Inputs.getInt();
 
-        if (Drinks.juices.containsKey(userInput)) {
+        if (Drinks.juices.containsKey(userInput))
+        {
             juice.setBrand(Drinks.juices.get(userInput));
-            switch (userInput) {
+            switch (userInput)
+            {
                 case 1 -> juice.setPrice(2.75);
                 case 2 -> juice.setPrice(2.00);
                 case 3 -> juice.setPrice(1.80);

@@ -20,31 +20,30 @@ public class Inputs {
         }
     }
 
-    private static void ensureScannerIsOpen() {
-        if (scanner == null) {
+    private static void ensureScannerIsOpen()
+    {
+        if (scanner == null)
+        {
             openScanner();
         }
     }
 
-    public static String getString() {
+    public static String getString()
+    {
         ensureScannerIsOpen();
         return scanner.nextLine();
     }
 
-    public static int getInt() {
+    public static int getInt()
+    {
         ensureScannerIsOpen();
-        while (!scanner.hasNextInt()) {
+        while (!scanner.hasNextInt())
+        {
             System.out.println("That's not a valid number... Please enter an integer:");
             scanner.next();
         }
         int input = scanner.nextInt();
         scanner.nextLine();
         return input;
-    }
-
-    public static void awaitInput() {
-        ensureScannerIsOpen();
-        System.out.print("\nPress ENTER to continue...");
-        scanner.nextLine();
     }
 }

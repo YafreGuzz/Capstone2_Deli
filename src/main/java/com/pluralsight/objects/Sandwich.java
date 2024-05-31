@@ -188,14 +188,6 @@ public class Sandwich
         return regularToppings.containsKey(topping) || meatToppings.containsKey(topping) || cheeseToppings.containsKey(topping) || sauces.containsKey(topping) || sides.containsKey(topping);
     }
 
-    public static Map<String, Double> getSauces() {
-        return sauces;
-    }
-
-    public static Map<String, Double> getSides() {
-        return sides;
-    }
-
     public void setSize(int size)
     {
         initSandwich(size);
@@ -205,10 +197,6 @@ public class Sandwich
 
     public void setBreadType(String breadType) {
         this.breadType = breadType;
-    }
-
-    public boolean isToasted() {
-        return isToasted;
     }
 
     public void setToasted(boolean toasted) {
