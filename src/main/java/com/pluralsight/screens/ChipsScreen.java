@@ -10,6 +10,7 @@ public class ChipsScreen
     {
         while (true)
         {
+
             Chips chip = new Chips();
             System.out.println("""
                     Which Chips would you like to add?:
@@ -26,6 +27,7 @@ public class ChipsScreen
             {
                 System.out.println("Invalid choice. Please try again.");
                 continue;
+
             }
 
             chip.setName(getChipName(choice));
@@ -43,6 +45,7 @@ public class ChipsScreen
 
     private static int getUserChoice()
     {
+
         try
         {
             int choice = Inputs.getInt();
@@ -54,6 +57,7 @@ public class ChipsScreen
         }
         catch (NumberFormatException e)
         {
+
             return -1;
         }
     }
