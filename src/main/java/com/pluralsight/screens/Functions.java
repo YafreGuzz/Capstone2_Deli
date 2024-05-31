@@ -71,7 +71,6 @@ public class Functions
                 ChipsScreen.chipsScreen(currentOrder);
                 orderScreen(currentOrder);
             break;
-
             case 4:
                 Receipt.checkOut(currentOrder);
                 homeScreen();
