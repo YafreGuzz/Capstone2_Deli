@@ -4,8 +4,6 @@ import com.pluralsight.objects.Chips;
 import com.pluralsight.objects.Order;
 import com.pluralsight.util.Inputs;
 
-import java.util.ArrayList;
-
 public class ChipsScreen
 {
     public static void chipsScreen(Order currentOrder)

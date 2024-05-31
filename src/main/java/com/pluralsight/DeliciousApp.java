@@ -10,5 +10,6 @@ public class DeliciousApp
         Inputs.openScanner();
         Functions.homeScreen();
         Inputs.closeScanner();
+
     }
 }

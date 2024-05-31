@@ -167,24 +167,26 @@ public class SandwichScreen
 
         System.out.println("""
                        These are all our toppings:
-                    ____________________________
-                       Meats    |    Cheeses   |
-                    ____________________________
-                      Steak     |   American   |
-                      Ham       |   Provolone  |
-                      Salami    |   Cheddar    |
-                     Roast Beef |   Swiss      |
-                      Chicken   |              |
-                      Bacon     |              |
+                    ┌───────────────────────────────---┐
+                    │       Meats     |    Cheeses     │
+                    ├─────────────────────-───────────-┤
+                    │     Steak       |   American     │
+                    │      Ham        |   Provolone    │
+                    │     Salami      |   Cheddar      │
+                    │   Roast Beef    |   Swiss        │
+                    │    Chicken      |   Parmesan     │
+                    │     Bacon       |   Mozzarella   │
+                    └───────────────────────────────---┘
 
                     Which extra topping would you like to add?:\s""");
 
-        String pTopping = Inputs.getString();
+        String pTopping = Inputs.getString().toLowerCase();
         premiumToppings.add(pTopping);
 
         while (true)
         {
             System.out.println("\nWould you like extra toppings? (yes/no)");
+            System.out.print("Choice: ");
             String choice2 = Inputs.getString();
 
             if (choice2.equalsIgnoreCase("yes") || choice2.equalsIgnoreCase("y"))
@@ -198,7 +200,7 @@ public class SandwichScreen
                     System.out.println("Enter extra meat toppings (type 'Done' to finish):");
                     while (true)
                     {
-                        String input = Inputs.getString();
+                        String input = Inputs.getString().toLowerCase();
                         if (input.equalsIgnoreCase("done"))
                         {
                             break;
@@ -237,7 +239,7 @@ public class SandwichScreen
                     System.out.println("Enter extra cheese (type 'Done' to finish):");
                     while (true)
                     {
-                        String input = Inputs.getString();
+                        String input = Inputs.getString().toLowerCase();
                         if (input.equalsIgnoreCase("done"))
                         {
                             break;
@@ -310,22 +312,24 @@ public class SandwichScreen
                 System.out.println("""
                         This are our regular toppings, free of charge:
                         ______________________________________________
-                        Regular Toppings
-                         - Lettuce
-                         - Peppers
-                         - Onions
-                         - Tomatoes
-                         - Jalapenos
-                         - Cucumbers
-                         - Pickles
-                         - Guacamole
-                         - Mushrooms
+                        Regular Toppings :
+                        _________________
+                        [1] Lettuce
+                        [2] Peppers
+                        [3] Onions
+                        [4] Tomatoes
+                        [5] Jalapenos
+                        [6] Cucumbers
+                        [7] Pickles
+                        [8] Guacamole
+                        [9] Mushrooms
+                        
                          Enter values (type 'done' to finish):
                         """);
 
                 while (true)
                 {
-                    String regularTopping = Inputs.getString();
+                    String regularTopping = Inputs.getString().toLowerCase();
                     if (regularTopping.equalsIgnoreCase("done"))
                     {
                         break;
@@ -353,22 +357,26 @@ public class SandwichScreen
             System.out.println("""
                     This are our Sauces and Sides, free of charge:
                     ______________________________________________
-                    Sauces Toppings:
-                     - Mayo
-                     - Mustard
-                     - Ketchup
-                     - Ranch
-                     - Thousand Islands
-                     - Vinaigrette
-                    Sides:
-                     - au jus
-                     - sauce
+                    Sauces Toppings :
+                    ________________
+                    [1] Mayo
+                    [2] Mustard
+                    [3] Ketchup
+                    [4] Ranch
+                    [5] Thousand Islands
+                    [6] Vinaigrette
+                    
+                    Sides :
+                    _____
+                    [1] au jus
+                    [2] sauce
+                    
                      Enter values (type 'done' to finish):
                     """);
 
             while (true)
             {
-                String regularTopping = Inputs.getString();
+                String regularTopping = Inputs.getString().toLowerCase();
                 if (regularTopping.equalsIgnoreCase("done"))
                 {
                     break;

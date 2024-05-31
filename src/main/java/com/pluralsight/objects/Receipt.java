@@ -67,7 +67,7 @@ public class Receipt
                 }
             }
 
-            double tax = totalPrice * .07;
+            double tax = totalPrice * .05;
             double finalPrice = tax + totalPrice;
 
             output.append("=============================\n\n");

@@ -46,22 +46,22 @@ public class Sandwich
 
     private static void initRegularToppings()
     {
-        regularToppings.put("Lettuce", 0.0);
-        regularToppings.put("Peppers", 0.0);
-        regularToppings.put("Onions", 0.0);
-        regularToppings.put("Tomatoes", 0.0);
-        regularToppings.put("Jalapenos", 0.0);
-        regularToppings.put("Cucumbers", 0.0);
-        regularToppings.put("Pickles", 0.0);
-        regularToppings.put("Guacamole", 0.0);
-        regularToppings.put("Mushrooms", 0.0);
+        regularToppings.put("lettuce", 0.0);
+        regularToppings.put("peppers", 0.0);
+        regularToppings.put("onions", 0.0);
+        regularToppings.put("tomatoes", 0.0);
+        regularToppings.put("jalapenos", 0.0);
+        regularToppings.put("cucumbers", 0.0);
+        regularToppings.put("pickles", 0.0);
+        regularToppings.put("guacamole", 0.0);
+        regularToppings.put("mushrooms", 0.0);
 
-        sauces.put("Mayo", 0.0);
-        sauces.put("Mustard", 0.0);
-        sauces.put("Ketchup", 0.0);
-        sauces.put("Ranch", 0.0);
-        sauces.put("Thousand Islands", 0.0);
-        sauces.put("Vinaigrette", 0.0);
+        sauces.put("mayo", 0.0);
+        sauces.put("mustard", 0.0);
+        sauces.put("ketchup", 0.0);
+        sauces.put("ranch", 0.0);
+        sauces.put("thousand islands", 0.0);
+        sauces.put("vinaigrette", 0.0);
 
         sides.put("au jus", 0.0);
         sides.put("sauce", 0.0);
@@ -72,40 +72,46 @@ public class Sandwich
         switch (size)
         {
             case 4:
-                meatToppings.put("Steak", 1.00);
-                meatToppings.put("Ham", 1.00);
-                meatToppings.put("Salami", 1.00);
-                meatToppings.put("Roast Beef", 1.00);
-                meatToppings.put("Chicken", 1.00);
-                meatToppings.put("Bacon", 1.00);
-                cheeseToppings.put("American", 1.00);
-                cheeseToppings.put("Provolone", 1.00);
-                cheeseToppings.put("Cheddar", 1.00);
-                cheeseToppings.put("Swiss", 1.00);
+                meatToppings.put("steak", 1.00);
+                meatToppings.put("ham", 1.00);
+                meatToppings.put("salami", 1.00);
+                meatToppings.put("roast beef", 1.00);
+                meatToppings.put("chicken", 1.00);
+                meatToppings.put("bacon", 1.00);
+                cheeseToppings.put("american", 1.00);
+                cheeseToppings.put("provolone", 1.00);
+                cheeseToppings.put("cheddar", 1.00);
+                cheeseToppings.put("swiss", 1.00);
+                cheeseToppings.put("parmesan", 1.00);
+                cheeseToppings.put("mozzarella", 1.00);
                 break;
             case 8:
-                meatToppings.put("Steak", 2.00);
-                meatToppings.put("Ham", 2.00);
-                meatToppings.put("Salami", 2.00);
-                meatToppings.put("Roast Beef", 2.00);
-                meatToppings.put("Chicken", 2.00);
-                meatToppings.put("Bacon", 2.00);
-                cheeseToppings.put("American", 2.00);
-                cheeseToppings.put("Provolone", 2.00);
-                cheeseToppings.put("Cheddar", 2.00);
-                cheeseToppings.put("Swiss", 2.00);
+                meatToppings.put("steak", 2.00);
+                meatToppings.put("ham", 2.00);
+                meatToppings.put("salami", 2.00);
+                meatToppings.put("roast beef", 2.00);
+                meatToppings.put("chicken", 2.00);
+                meatToppings.put("bacon", 2.00);
+                cheeseToppings.put("american", 2.00);
+                cheeseToppings.put("provolone", 2.00);
+                cheeseToppings.put("cheddar", 2.00);
+                cheeseToppings.put("swiss", 2.00);
+                cheeseToppings.put("parmesan", 2.00);
+                cheeseToppings.put("mozzarella", 2.00);
                 break;
             case 12:
-                meatToppings.put("Steak", 3.00);
-                meatToppings.put("Ham", 3.00);
-                meatToppings.put("Salami", 3.00);
-                meatToppings.put("Roast Beef", 3.00);
-                meatToppings.put("Chicken", 3.00);
-                meatToppings.put("Bacon", 3.00);
-                cheeseToppings.put("American", 3.00);
-                cheeseToppings.put("Provolone", 3.00);
-                cheeseToppings.put("Cheddar", 3.00);
-                cheeseToppings.put("Swiss", 3.00);
+                meatToppings.put("steak", 3.00);
+                meatToppings.put("ham", 3.00);
+                meatToppings.put("salami", 3.00);
+                meatToppings.put("roast beef", 3.00);
+                meatToppings.put("chicken", 3.00);
+                meatToppings.put("bacon", 3.00);
+                cheeseToppings.put("american", 3.00);
+                cheeseToppings.put("provolone", 3.00);
+                cheeseToppings.put("cheddar", 3.00);
+                cheeseToppings.put("swiss", 3.00);
+                cheeseToppings.put("parmesan", 3.00);
+                cheeseToppings.put("mozzarella", 3.00);
                 break;
         }
     }

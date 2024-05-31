@@ -3,10 +3,7 @@ package com.pluralsight.screens;
 import com.pluralsight.objects.Order;
 import com.pluralsight.objects.Receipt;
 import com.pluralsight.objects.Sandwich;
-import com.pluralsight.objects.Toppings;
 import com.pluralsight.util.Inputs;
-
-import java.util.ArrayList;
 
 public class Functions
 {
@@ -39,7 +36,7 @@ public class Functions
                 default:
                     System.out.println("""
                             Wrong input please try again!
-                            ----------------------------------""");
+                            -----------------------------""");
                     homeScreen();
                     break;
             }
